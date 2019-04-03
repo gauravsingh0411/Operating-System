@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-
 double average; 
 int minimum;
 int maximum;
-
 struct datas
 {
 int size;
@@ -46,8 +44,6 @@ average += (ar1->values[j]);
 }
 average = (int)(average / size1); 
 }
-
-
 void *min(void *ptr)
 {
 struct datas *ar1=ptr;
@@ -64,8 +60,6 @@ minimum = (ar1->values[i]);
 }
 }
 }
-
-
 void *max(void *ptr)
 {
 struct datas *ar1=ptr;
@@ -106,4 +100,3 @@ pthread_create(&th4,NULL,disp,&display);
 pthread_join(th4,NULL);
 exit(EXIT_SUCCESS);
 }
-
