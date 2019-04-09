@@ -37,7 +37,6 @@ void *avg(void *ptr)
 struct datas *ar1=ptr;
 int size1=ar1->size;
 int j;
-
 for(j = 0; j < size1; j++)
 {
 average += (ar1->values[j]); 
