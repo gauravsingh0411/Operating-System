@@ -31,7 +31,6 @@ int main()
     else if (p > 0) 
     { 
         char str1[100]; 
-  
         close(fd1[0]);  
         write(fd1[1], str, strlen(str)+1); 
         close(fd1[1]); 
