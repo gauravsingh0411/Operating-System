@@ -20,7 +20,6 @@ int main()
         fprintf(stderr, "Pipe Failed" ); 
         return 1; 
     } 
-
     scanf("%s",str); 
     p = fork(); 
     if (p < 0) 
