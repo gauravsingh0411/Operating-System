@@ -27,7 +27,6 @@ for(i=0; i < (argc -1); i++)
 {
 array[i] = atoi(argv[i+1]);
 }
-
 pthread_t th1, th2, th3,th4;
 struct datas ds = {argc - 1, array};
 
