@@ -23,7 +23,6 @@ int main()
 
     scanf("%s",str); 
     p = fork(); 
-  
     if (p < 0) 
     { 
         fprintf(stderr, "fork Failed" ); 
