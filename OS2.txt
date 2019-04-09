@@ -35,7 +35,6 @@ int main()
         write(fd1[1], str, strlen(str)+1); 
         close(fd1[1]); 
         wait(NULL); 
-  
         close(fd2[1]); 
         read(fd2[0], str1, 100); 
         printf("Concatenated string %s\n", str1); 
