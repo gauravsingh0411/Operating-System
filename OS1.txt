@@ -21,7 +21,6 @@ printf("Incorrect input. No arguments entered.\n");
 printf("Please enter one or more inputs.\n");
 exit(0);
 }
-
 int i = 0;
 int array[argc-1];
 for(i=0; i < (argc -1); i++)
